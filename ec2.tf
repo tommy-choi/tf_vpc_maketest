@@ -6,7 +6,7 @@ resource "aws_instance" "myinstance" {
   vpc_security_group_ids      = ["${aws_security_group.mysg.id}"]
   associate_public_ip_address = "true"
   tags = {
-    Name = "single_public_ec2"
+    Name = "tf-single_public_ec2"
   }
 }
 
