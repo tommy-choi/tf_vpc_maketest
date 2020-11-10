@@ -1,5 +1,5 @@
 resource "aws_instance" "myinstance" {
-  ami                         = "ami-0d59ddf55cdda6e21"
+  ami                         = "ami-036559f6f83de21be"
   instance_type               = "t2.micro"
   key_name                    = "${aws_key_pair.mykey.key_name}"
   subnet_id                   = "${aws_subnet.mysub.id}"
