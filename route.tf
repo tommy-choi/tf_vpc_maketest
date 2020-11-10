@@ -5,7 +5,7 @@ resource "aws_default_route_table" "myrt" {
   gateway_id = "${aws_internet_gateway.myigw.id}"
   }
   tags = {
-    Name = "single_route_table"
+    Name = "tf_single_route_table"
   }
 }
 

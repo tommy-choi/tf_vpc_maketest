@@ -1,5 +1,5 @@
 resource "aws_security_group" "mysg" {
-  name        = "single_security_group"
+  name        = "tf_single_security_group"
   description = "Allow defined port "
   vpc_id      = "${aws_vpc.myvpc.id}"
   ingress {
@@ -10,7 +10,7 @@ resource "aws_security_group" "mysg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "single_security_group"
+    Name = "tf_single_security_group"
   }
 }
 

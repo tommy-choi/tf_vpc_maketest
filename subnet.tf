@@ -3,7 +3,7 @@ resource "aws_subnet" "mysub" {
   availability_zone = "ap-northeast-2a"
   cidr_block        = "10.10.10.0/24"
   tags = {
-    Name = "single_public_subnet"
+    Name = "tf_single_public_subnet"
   }
 }
 
